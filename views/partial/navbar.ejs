@@ -1,17 +1,19 @@
-<nav class="flex justify-between items-center flex-row z-0 p-4 h-20 pl">
+<nav class="flex justify-between items-center flex-row z-0 p-4 h-20 text-lg">
   <section class="w-1/5 h-full flex items-center">
-    <img src="asddsa.img" alt="Logo" />
+    <img src="smth.png" alt="Logo" class="w-[120px] hover:cursor-pointer" />
   </section>
-  <section
-    class="flex justify-between flex-row w-4/5 pr-40 pl-40 font h-full items-center max-sm:pr-0 max-sm:pl-0 text-white text-base"
-  >
-    <a href="index">Home</a>
-    <a href="about">About me</a>
-    <a href="contact">Contact</a>
-    <button
-      class="bg-gray-700 text-white w-40 rounded-xl h-full border-white border-solid border"
-    >
-      Projects
-    </button>
+  <section class="flex justify-between flex-row w-4/5 pr-40 pl-40 font h-full items-center text-white min-[320px]:max-md:p-0">
+    <ul class="flex justify-between flex-1 pl-[45%] min-[320px]:max-md:p-0"">
+      <li class="basis-1/3">
+        <a href="index" class="hover:text-[#3c1b43] transition-all">Home</a>
+      </li>
+      <li class="basis-1/3">
+        <a href="about" class="hover:text-[#3c1b43] transition-all">About me</a>
+      </li>
+      <li class="basis-1/3">
+        <a href="contact" class="hover:text-[#3c1b43] transition-all">Contact</a>
+      </li>
+    </ul>
+    <button class="text-white w-40 rounded-xl h-full border-[#3c1b43] border-solid border text-[#3c1b43] hover:text-white hover:bg-[#3c1b43] transition-all">Projects</button>
   </section>
 </nav>
