@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="/style.css" type="text/css" />
   </head>
   <body>
-    <section class="bg-[url('/pexels-daniel-putzer-633409.jpg')] h-[90vh] bg-no-repeat bg-cover">
+    <section class="bg-[url('/pexels-daniel-putzer-633409.jpg')] h-[90vh] bg-no-repeat bg-cover mb-[4rem]">
       <%- include('./partial/navbar.ejs') %>
-      <section class="h-1/2 w-1/2 justify-center flex pl-[5%] flex-col min-[320px]:max-sm:items-center min-[320px]:max-sm:w-full min-[320px]:max-sm:justify-normal gap-6 sm:max-xl:w-full">
+      <section class="h-3/5 w-1/2 justify-center flex pl-[5%] flex-col min-[320px]:max-sm:items-center min-[320px]:max-sm:w-full min-[320px]:max-sm:justify-normal gap-6 sm:max-xl:w-full">
         <h1 class="text-[#3c1b43] text-4xl min-[320px]:text-2xl">Roadzik - Full stack developer</h1>
         <p class="text-white text-xl min-[320px]:max-sm:text-l w-3/5">I am a Full stack developer that creates websites using: <br>
           Frontend: Tailwind, JS - learning (Typescript and React) <br> 
@@ -18,7 +18,42 @@
           <button class="text-white w-40 h-[42px] rounded-xl h-full border-solid border border-[#3c1b43] hover:text-[#3c1b43] hover:bg-transparent bg-[#3c1b43] transition-all">My Portfolio</button>
           <button class="text-white w-40 h-[42px] rounded-xl h-full border-solid border border-[#3c1b43] hover:text-[#3c1b43] hover:bg-transparent bg-[#3c1b43] transition-all">More About Me</button>
         </section>
-        </section>
+      </section>
+    </section>
+    <section class="technologies h-[200px] flex flex-row">
+      <script>
+        let smth = '<%=data%>'.split(',')
+        let smth1 = smth.map((e)=> e.split('c/')[1])
+        let counter = 0
+        smth1.forEach(e=>{
+          let section = document.createElement('section')
+          section.className = 'w-1/4 cont'
+          document.querySelector('.technologies').appendChild(section)
+          let img = document.createElement('img');
+          img.src = e
+          if(document.querySelector('.technologies').children.length > 5) document.querySelectorAll('.cont')[counter].className = 'w-1/4 cont center hidden'
+          document.querySelectorAll('.cont')[counter].appendChild(img)
+          if(document.querySelectorAll('.technologies section img')[counter].height > 300) document.querySelectorAll('.technologies section img')[counter].className = 'h-1/2' 
+          counter++
+        })
+      </script>
+      <!--
+        <section class="basis-1/4 flex justify-center">
+          <img src="/logos/css-3.svg" class="w-[50%]" alt="">
+      </section>
+      <section class="basis-1/4 flex justify-center">
+        <img src="/logos/express-109.svg" class="w-[50%]" alt="">
+      </section>
+      <section class="basis-1/4 flex justify-center">
+        <img src="/logos/git.svg" class="w-[50%]" alt="">
+      </section>
+      <section class="basis-1/4 flex justify-center">
+        <img src="/logos/html-1.svg" class="w-[50%]" alt="">
+      </section>
+      <section class="basis-1/4 flex justify-center">
+        <img src="/logos/html-1.svg" class="w-[50%]" alt="">
+      </section>
+    --> 
     </section>
   </body>
 </html>
