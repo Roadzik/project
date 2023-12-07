@@ -674,6 +674,22 @@ html {
   height: 100%;
 }
 
+.h-4\/5 {
+  height: 80%;
+}
+
+.h-4 {
+  height: 1rem;
+}
+
+.h-1\/4 {
+  height: 25%;
+}
+
+.h-1\/3 {
+  height: 33.333333%;
+}
+
 .w-1 {
   width: 0.25rem;
 }
@@ -772,6 +788,10 @@ html {
 
 .transform {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.cursor-pointer {
+  cursor: pointer;
 }
 
 .resize {
@@ -928,6 +948,38 @@ html {
 
 .pt-40 {
   padding-top: 10rem;
+}
+
+.pr-\[20px\] {
+  padding-right: 20px;
+}
+
+.pb-\[5rem\] {
+  padding-bottom: 5rem;
+}
+
+.pr-\[5rem\] {
+  padding-right: 5rem;
+}
+
+.pb-\[4rem\] {
+  padding-bottom: 4rem;
+}
+
+.pr-\[4rem\] {
+  padding-right: 4rem;
+}
+
+.pb-\[3rem\] {
+  padding-bottom: 3rem;
+}
+
+.pr-\[10px\] {
+  padding-right: 10px;
+}
+
+.pr-\[6px\] {
+  padding-right: 6px;
 }
 
 .text-2xl {
